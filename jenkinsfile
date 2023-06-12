@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('git repository') {
             steps {
-              git branch: 'build-and-push-to-jfrog-jenkinsfile', credentialsId: 'Github-credentials1', url: 'https://github.com/Anass304/java-application'  
+              git branch: '*/build-and-push-to-jfrog-jenkinsfile', credentialsId: 'Github-credentials1', url: 'https://github.com/Anass304/java-application' 
             }
         }
         stage('build'){
